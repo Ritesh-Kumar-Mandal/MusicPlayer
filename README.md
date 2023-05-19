@@ -1,15 +1,6 @@
-logging.debug('This is a debug message')
-logging.info('This is an info message')
-logging.warning('This is a warning message')
-logging.error('This is an error message')
-logging.critical('This is a critical message')
-
-
 # Music Player using a Linked List
 
 This is a Python program that implements a music player using a linked list data structure. The program allows you to load a folder of MP3 files, display them in a list, and play, pause, skip to the next or previous song. It provides a simple graphical user interface (GUI) using the [Tkinter](https://docs.python.org/3/library/tkinter.html) library.
-
-Used [tkinter](https://docs.python.org/3/library/tkinter.html) to create a window with a playlist widget and controls for playing, pausing, and skipping songs, and [pygame](https://www.pygame.org/docs/ref/mixer.html) mixer module for loading and playing songs.
 
 ## Installtion
 
@@ -35,9 +26,9 @@ py main.py
 ## Requirements
 
 - Python 3.x
-- Tkinter library
-- pygame library
-- PIL library
+- [Tkinter](https://docs.python.org/3/library/tkinter.html) library
+- [pygame](https://www.pygame.org/docs/ref/mixer.html) library
+- [Pillow (PIL Fork)](https://pillow.readthedocs.io/en/stable/) library
 
 ## Installtion
 ```sh
