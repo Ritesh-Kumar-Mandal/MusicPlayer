@@ -33,3 +33,7 @@ An app to implement LinkedList Data Structure by creating an MusicPlayer app whe
 
 11. Run the main python script to run the application - main.py
     -->py main.py
+
+12. In the open window Click--> File --> Select Music Folder --> Choose you folder where you have placed music --> Open
+
+13. Click on Play button to start the music.
