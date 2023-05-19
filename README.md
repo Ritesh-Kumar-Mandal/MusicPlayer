@@ -62,8 +62,6 @@ py main.py
 
 ![Main Window](https://github.com/Ritesh-Kumar-Mandal/MusicPlayer/blob/e841fdb3a240a48fd54555c5636c7af6d0b38be3/ScreenShots/MainWindow.png)
 
-![Music Control](https://github.com/Ritesh-Kumar-Mandal/MusicPlayer/blob/e841fdb3a240a48fd54555c5636c7af6d0b38be3/ScreenShots/MusicControl.png)
-
 ![File Menu](https://github.com/Ritesh-Kumar-Mandal/MusicPlayer/blob/e841fdb3a240a48fd54555c5636c7af6d0b38be3/ScreenShots/FileMenu.png)
 
 ![Add Music](https://github.com/Ritesh-Kumar-Mandal/MusicPlayer/blob/e841fdb3a240a48fd54555c5636c7af6d0b38be3/ScreenShots/Open%20Music%20Folder.png)
