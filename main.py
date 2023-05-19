@@ -1,3 +1,4 @@
+from LinkedList import LinkedList
 from tkinter import *
 from tkinter import filedialog
 from PIL import Image, ImageTk
@@ -30,9 +31,9 @@ pygame.mixer.init()
 menu_bar = Menu(root)
 root.config(menu=menu_bar)      ## To set the root's menu bar to our menu bar
 
-##------------------------------------- 
+##---------------------------------------------------------------------------------------------------------------
 
-songs = []
+songs = LinkedList()            ## Using the Created LinkedList DataStructure to store the songs list
 current_song = ""
 paused = False
 
@@ -46,17 +47,17 @@ def load_music():
         if ext == '.mp3':
             songs.append(song)
     
-    for song in songs:
-        song_list.insert("end", song)
+    for i in range(songs.length()):
+        song_list.insert("end", songs.get(i))
     
     song_list.select_set(0)
-    current_song = songs[song_list.curselection()[0]]       ## To make the current song which selected in the song list
+    current_song = songs.get(song_list.curselection()[0])       ## To make the current song which selected in the song list
 
 def play_music():
     global current_song, paused
 
     ## To get current selected song in-case user want to play different song while listening to other song
-    current_song = songs[song_list.curselection()[0]]
+    current_song = songs.get(song_list.curselection()[0])
 
     if not paused:
         pygame.mixer.music.load(os.path.join(root.directory, current_song))  ## path.join will join the chosen directory path and the song name
@@ -82,7 +83,7 @@ def next_music():
     try:
         song_list.selection_clear(0, END)  
         song_list.select_set(songs.index(current_song) + 1)
-        current_song = songs[song_list.curselection()[0]]           
+        current_song = songs.get(song_list.curselection()[0])           
         play_music()
     except Exception as e:
 
@@ -94,13 +95,13 @@ def prev_music():
     try:
         song_list.selection_clear(0, END)
         song_list.select_set(songs.index(current_song) - 1)
-        current_song = songs[song_list.curselection()[0]]
+        current_song = songs.get(song_list.curselection()[0])
         play_music()
     except Exception as e:
         pass ## Do nothing when we receive when we are at the start of the list user hits prev song
 
 
-##-------------------------------------
+##---------------------------------------------------------------------------------------------------------------
 
 organise_menu = Menu(menu_bar, tearoff=False)               ## Creating a organised menu     # tearoff=False, will remove default row created in menu
 organise_menu.add_command(label='Select Music Folder', command=load_music)      ## Adding a command to our organised menu

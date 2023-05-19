@@ -10,7 +10,7 @@ An app to implement LinkedList Data Structure by creating an MusicPlayer app whe
 3. Open the terminal in VsCode " Ctrl + ` "
 
 4. Clone the Git Repo to get the code.
-    -->git clone https://github.com/Ritesh-Kumar-Mandal/Connect4-Python.git
+    -->git clone https://github.com/Ritesh-Kumar-Mandal/MusicPlayer.git
 
 5. Move to the Project directory
     -->cd Connect4-Python
